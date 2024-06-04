@@ -1,0 +1,113 @@
+/* page.css */
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form container */
+.contact-form-container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form input styles */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Button styles */
+.submit-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Image upload section */
+.image-upload-container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Image upload input styles */
+#fileInput0,
+#fileInput1,
+#fileInput2,
+#fileInput3 {
+  display: none;
+}
+
+/* Image upload label styles */
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Uploaded image URL styles */
+.image-url {
+  margin-top: 10px;
+}
+
+/* Category dropdown styles */
+.category-dropdown {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Category dropdown label styles */
+.category-dropdown label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Category dropdown select styles */
+#category {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Category dropdown option styles */
+#category option {
+  padding: 5px;
+}
+
+/* Section title styles */
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Toast container styles */
+.Toastify__toast-container {
+  z-index: 9999;
+}
