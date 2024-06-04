@@ -14,9 +14,16 @@ const FormComponent = () => {
   const [images, setImages] = useState(Array.from({ length: 4 }, () => null));
   const [title, settitle] = useState("");
   const [description, setdescription] = useState("");
-  const [category, setcategory] = useState("");
   const [imgurl, setimgurl] = useState("");
+
+  // Your existing state variables and functions...
+  const [category, setCategory] = useState("");
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
+  };
   const [state, setState] = useState({
+    type: "caseStudies",
+    category: category,
     heading1: "",
     heading2: "",
     url1: "",
@@ -245,6 +252,20 @@ const FormComponent = () => {
         pauseOnHover
         theme="dark"
       />
+
+      <div className="category-dropdown">
+        <label htmlFor="category">Select Category:</label>
+        <select id="category" value={category} onChange={handleCategoryChange}>
+          <option value="">Select...</option>
+          <option value="AR">AR</option>
+          <option value="VR">VR</option>
+          <option value="3D">3D</option>
+          <option value="CGI">CGI</option>
+          <option value="AI">AI</option>
+          <option value="Gaming">Gaming</option>
+          <option value="Custom Software">Custom Software</option>
+        </select>
+      </div>
     <div>
       <h2>Case Study Form</h2>
       <div>
@@ -290,13 +311,7 @@ const FormComponent = () => {
             onChange={(e) => setdescription(e.target.value)}
             placeholder="Description"
           />
-          <input
-            className="input-field"
-            name="category"
-            value={category}
-            onChange={(e) => setcategory(e.target.value)}
-            placeholder="Category"
-          />
+         
 
           <input
             className="input-field"
